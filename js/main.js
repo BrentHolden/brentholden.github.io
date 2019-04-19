@@ -268,7 +268,7 @@ function changeToPortfolioCode(){
     portfolioCodeCode.setAttribute('id', 'portfolioCodeCode');
     portfolioCodePre.appendChild(portfolioCodeCode);
 
-    fetch('https://api.github.com/repos/BrentHolden/portfolio/contents/index.html')
+    fetch('https://api.github.com/repos/BrentHolden/brentholden.github.io/contents/index.html')
         .then(response => response.json())
         .then(data => {
             portfolioCodeCode.textContent = atob(data.content);
