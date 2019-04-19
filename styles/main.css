@@ -83,7 +83,11 @@
 
 code {
     font-family: monospace;
-    overflow: scroll;
+}
+
+pre {
+    overflow: scroll !important;
+    height: 95%;
 }
 
 #portfolioCodeButtons{
