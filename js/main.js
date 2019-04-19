@@ -278,7 +278,7 @@ function changeToPortfolioCode(){
 
 function projectFromGithub(){
 
-    fetch(`https://api.github.com/repos/BrentHolden/portfolio/contents/${this.attributes[0].nodeValue}`)
+    fetch(`https://api.github.com/repos/BrentHolden/brentholden.github.io/contents/${this.attributes[0].nodeValue}`)
         .then(response => response.json())
         .then(data => {
             portfolioCodeCode.textContent = atob(data.content);
